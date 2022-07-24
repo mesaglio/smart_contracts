@@ -2,7 +2,7 @@ async function main() {
     const JuaniMessage = await ethers.getContractFactory("JuaniMessage")
 
     // Start deployment, returning a promise that resolves to a contract object
-    const juani_message = await JuaniMessage.deploy()
+    const juani_message = await JuaniMessage.deploy("First Message.")
     console.log("Contract deployed to address:", juani_message.address)
 }
 
